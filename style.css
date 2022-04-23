@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* color: #fff; */
+    outline: none;
+    border: none;
+}
+html{
+    font-size:62.3% ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem 7%;
+    padding-top: 6rem;
+}
+.btn{
+    display: inline-block;
+    background: rgba(0,0,0,.3);
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius:5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    transition: all 0.3s ease-in;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+.heading{
+    text-align: center;
+    color: #003333;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.subheading{
+    text-align: center;
+    color: #003333;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.1rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    background: #003333;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    padding: 2rem 8%;
+    z-index: 1000;
+    text-transform: capitalize;
+}
+header .logo{
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+header .navbar ul{
+    list-style: none;
+    float: right;
+    
+}
+
+header .navbar ul li{
+    width: 170px;
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    
+}
+header .navbar ul li a{
+    display: block;
+    color: aliceblue;
+    line-height: 3rem;
+    font-size: 2rem;
+    padding: 2rem 15px;
+    text-align: center;
+    
+    
+}
+header .navbar ul li a:hover{
+    background: transparent;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5rem;
+}
+
+
+header .navbar ul ul{
+    position: absolute;
+    top: 12rem;
+    min-height: 100px;
+    display: none;
+}
+header .navbar ul li:hover > ul{
+    display: block;
+    height: 60px;
+}
+header .navbar ul ul li{
+    position: relative;
+    top: -60px;
+    left: 0;
+    background:rgba(0, 0, 0, 0.2);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url('images/bancar3.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+}
+.home .content{ 
+    flex: 0 0 70%;
+    padding: 0 10rem;
+}
+.home h1{
+    font-size: 5rem;
+    color: #f9f9f9;
+    text-transform: capitalize;
+    text-align: left;
+}
+.home .form__container{
+     flex: 0 0 30%;
+     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+     width: 340px;
+     padding: 50px 30px;
+     border-radius: 10px;
+     box-shadow: 7px 7px 60px #0000;
+     color: #fff;
+ }
+
+.home .form__container h1{
+  text-transform: capitalize;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+.home .form__container .control{
+    position: relative;
+}
+.control.success input{
+    border-bottom-color: #2ecc71;
+}
+.control.error input{
+    border-color: #e74c3c;
+}
+.control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    font-weight: 700;
+    
+    font-size: 1rem;
+}
+.control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.home .form__container .control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color:  black;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+
+}
+.home .form__container .btn{
+    background: #F76E11;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .8;
+    width: 100%;
+    transition: opacity .3s ease;
+}
+
+.home .form__container .link a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    transition: opacity .3s ease;
+}
+.home .form__container .link a:hover{
+    opacity: 1;
+}
+
+.products .box-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.products .box-container .box{
+    width: 40em;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    border-radius: 1rem;
+    margin: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.products .box-container .box:hover{
+    transform: translate3d(0px, -7px, 0px);
+}
+.products .box-container .box img{
+    height: 20rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 100%;
+    object-fit: cover;
+    display:block;
+}
+.products .box-container .box .content{
+    padding: 3rem;
+    text-align:center;
+    background-color: #062C30;
+    
+}
+.products .box-container .box .content h1{
+    color: #F76E11;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.products .box-container .box .content p{
+    padding: 3rem 0;
+    color: #fff;
+    font-size: 1.5rem;
+    
+}
+.products .box-container .box .content .btn{
+    width: 100%;
+    font-size: 2rem;
+}
+
+.offers{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: url('images/blackfriday1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+
+}
+.offers .btn{
+    margin-top: 35rem;
+    font-size: 2rem;
+    width: 35rem;
+    background: rgba(0,0,0,.6);
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    background: #0B735F;
+}
+
+.contact .image{
+    flex: 1 1 40rem;
+}
+.contact .image img{
+    width: 100%;
+    padding: 2rem;
+}
+.contact form{
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius:.5rem;
+    background: #fff;
+}
+.contact form .heading{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+.contact form .inputBox{
+    position: relative;
+}
+.contact form .inputBox input,
+.contact form .inputBox textarea{
+    width: 100%;
+    background: none;
+    color: #666;
+    margin: 1.5rem 0;
+    padding: 0.5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+    text-transform: none;
+}
+.contact form .inputBox textarea{
+    resize: none;
+    height: 13rem;
+}
+.contact form .inputBox label{
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.contact form .btn{
+    background: #003333;
+    width: 100%;
+}
+.contact form .btn:hover{
+    transform: scale(1.05);
+}
+
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+.contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox textarea:valid label~ label{
+    top: -1rem;
+    font-size: 1.5rem;
+    color: #003333;
+}
+
+
+.footer{
+    background: #003333;
+}
+.footer .box-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.footer .box-container .box{
+    margin: 1.5rem;
+    text-align: center;
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #f9f9f9;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #f9f9f9;
+    padding: .5rem 0;
+    text-transform: capitalize;
+}
+.footer .box-container .box p i{
+    color: #f9f9f9;
+}
+
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    display: block;
+    padding: .5rem 0;
+    color: #f9f9f9;
+}
+.footer .credit{
+    padding: 2rem 1rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+    background:rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 40%;
+    }
+    .offers .btn{
+        margin-top: 50rem;
+    }
+    .products .box-container{
+        flex-flow: column;
+    }
+}    

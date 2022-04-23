@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab Final</title>
+</head>
+<body>
+    <!-- Header start -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-car"></i> RTS Rent A Car</a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#products">Services <i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">Private cars</a> </li>
+                        <li><a href="#">Microbus</a> </li>
+                        <li><a href="#">Mini truck</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#offers">offers</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Home section start-->
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Welcome <br>to <br>RTS Rent A Car !</h1>
+            <a href="#"><button class="btn">get started</button></a>
+        </div>
+        <div class="form__container">
+            <h1>Login Form</h1>
+             <form action="#" id="form">
+                 <div class="control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <small>Error message</small>
+                 </div>
+                 <div class="control">
+                    <label for="psw">Password</label>
+                    <input type="password" name="psw" id="password">
+                    <small>Error message</small>
+                 </div>
+               <span><input type="checkbox"> Remember me</span>
+               <button class="btn">Submit</button>
+             </form>
+             <div class="link">
+                 <a href="#">Forget password?</a>
+             </div>
+        </div>
+        
+    </section>
+    <!-- Home section end -->
+
+    <!-- Product section start -->
+    <section class="products" id="products">
+        <h1 class="heading">Our Services</h1>
+        <p class="subheading">Most popular ones</p>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/privatecar.jpg" alt="">
+                <div class="content">
+                    <h1>Private Car</h1>
+                    <p>We provide Toyota manufacturing Allion, Premio, Probox</p>
+                    <a href="#"><button class="btn">Visit <span>&rarr;</span></button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/truck1.jpg" alt="">
+                <div class="content">
+                    <h1>Mini Truck</h1>
+                    <p>Premium quality Tata Ace Mini Trucks, Maruti Suzuki Super Carry Mini Truck, Mitsubishi Minicab</p>
+                    <a href="#"><button class="btn">Visit <span>&rarr;</span></button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/micro1.jpg" alt="">
+                <div class="content">
+                    <h1>Microbus</h1>
+                    <p>Offering 7/8 seating capacity of Toyota Noah, 14 seating capacity of Hiace</p>
+                    <a href="#"><button class="btn">Visit <span>&rarr;</span></button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product section end -->
+
+    <!-- Offers section start -->
+    <section class="offers" id="offers">
+        <a href="#"><button class="btn">Explore more</button></a>
+    </section>
+    <!-- Offers section end -->
+
+    <!-- Contact section start -->
+    <section class="contact" id="contact">
+        <div class="image">
+            <img src="images/contactcar1.jpeg" alt="">
+        </div>
+        <form action="">
+            <h1 class="heading">Contact us</h1>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>name</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" required>
+                <label>email</label>
+            </div>
+            <div class="inputBox">
+                <input type="number" required>
+                <label>phone</label>
+            </div>
+            <div class="inputBox">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <label>message</label>
+            </div>
+            <input type="submit" class="btn" value="send">
+        </form>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Social Links</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+ 
+            </div>
+            <div class="box">
+                <h3>Contact info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> dhaka, bangladesh</p>
+                <p><i class="fas fa-envelope"></i> rtsrentacar@gamil.com</p>
+                <p><i class="fas fa-phone"></i> +880-1723123450</p> 
+            </div>
+        </div>
+        <h1 class="credit"><span>&copy; RTS Rent A Car. </span>all rights reserved.</h1>
+    </div>
+    <!-- Footer section end -->
+    
+    <script src="index.js"></script>
+</body>
+</html>
